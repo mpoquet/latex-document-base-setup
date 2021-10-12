@@ -1,0 +1,9 @@
+rule tex_to_pdf
+    command = rubber -d $in
+
+rule fig_asy_to_pdf
+    command = (cd fig && asy -f pdf ../$in)
+
+build fig/triangle.pdf: fig_asy_to_pdf fig/triangle.asy
+
+build document.pdf document.aux document.bbl document.bcf document.blg document.log document.run.xml: tex_to_pdf document.tex | biblio.bib fig/triangle.pdf

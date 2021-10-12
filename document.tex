@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage[backend=biber, style=alphabetic]{biblatex}
+\addbibresource{biblio.bib}
+
+\graphicspath{{fig/}}
+
+\title{Disruptive Title: Wow}
+\date{2021-10-12}
+\author{Jane Doe}
+
+\begin{document}
+
+\maketitle
+%\tableofcontents
+
+\section{Content}
+I doubt that there is any useful information here~\cite{wikibook}.
+
+All we know is limited, apart from knowing the answer we all know. Or do we? Wombat and Koala have discovered some interesting things~\cite{wombat2016}.
+
+Some people are too nosy. What can happen to them is described by Laura Lion~\cite[9]{lion2010}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.5\textwidth]{triangle.pdf}
+    \caption{Triangle!}
+\end{figure}
+
+\printbibliography
+
+\end{document}

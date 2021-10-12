@@ -1,0 +1,8 @@
+.ninja_*
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.run.xml
+result
